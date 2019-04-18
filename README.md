@@ -38,3 +38,18 @@ npm install -g webpack
 npm install
 ```
 
+### CRUD API
+
+The booking module has the following functions:
+
+1. Create - Add an image
+POST - /api/restaurants/:id/photos
+
+2. Read - Retrieve all requested images
+GET - /api/restaurants/:id/photos
+
+3. Update - Modify image
+PATCH - /api/restaurants/:id/photos
+
+4.  Delete - Delete image
+DELETE - /api/restaurants/:id/photos
