@@ -1,0 +1,16 @@
+config:
+  target: 'http://localhost:3002'
+  phases:
+    - duration: 60
+      arrivalRate: 2500
+  defaults:
+    headers:
+      x-my-service-auth: '987401838271002188298567'
+    # payload:
+    #   path: "/Users/tampopo/Desktop/TableBytes/photo-carousel/numGenerate.csv"
+    #   fields:
+    #     - "id"
+scenarios:
+  - flow:
+    - get:
+        url: "/api/restaurants/{{$randomNumber(1,10000000)}}/photos"
